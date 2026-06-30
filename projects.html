@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects | Tanisha</title>
+    <meta name="description" content="Explore front-end projects built by Tanisha.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Animation Stylesheet -->
+    <link rel="stylesheet" href="animations.css">
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body class="light-mode page-xorba">
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Ambient Design Orbs -->
+    <div class="design-orb orb-1"></div>
+    <div class="design-orb orb-2"></div>
+
+    <!-- TOP NAVIGATION BAR (XORBA STYLE) -->
+    <nav class="navbar navbar-expand-lg custom-navbar-xorba">
+        <div class="container navbar-container-xorba">
+            <a class="navbar-brand brand-logo-xorba" href="index.html">
+                <img src="assets/ty_logo_new.svg" alt="T Logo" class="navbar-logo-img">
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <!-- Theme Switch for Mobile -->
+                <button class="theme-switch d-lg-none" id="theme-switch-mobile" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="index.html"><i class="fa-solid fa-user me-1"></i>Profile</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="about.html"><i class="fa-solid fa-person me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="skills.html"><i class="fa-solid fa-laptop-code me-1"></i>Skills</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba active" href="projects.html"><i class="fa-solid fa-folder-open me-1"></i>Project</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="contact.html"><i class="fa-solid fa-envelope me-1"></i>Contact</a></li>
+                    <!-- Theme Switch for Desktop -->
+                    <li class="nav-item ms-3 d-none d-lg-block">
+                        <button class="theme-switch" id="theme-switch-desktop" aria-label="Toggle Theme">
+                             <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN VERTICAL CONTENT CONTAINER -->
+    <main class="main-content-flow my-5">
+        <!-- SECTION 3: PROJECTS -->
+        <section id="projects" class="content-section-flow border-0 pb-0 reveal-fade">
+            <div class="container">
+                <div class="projects-header-row mb-4 reveal-slide-left">
+                    <i class="fa-regular fa-folder-open projects-logo-icon"></i>
+                    <h1 class="section-title"><strong>Featured Projects</strong></h1>
+                </div>
+                
+                <div class="projects-grid-flow">
+                    <!-- Project 1 -->
+                    <article class="project-item-card reveal-slide-left">
+                        <div class="project-header">
+                            <span class="project-category">BCA ACADEMIC PROJECT</span>
+                            <div class="project-links">
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">Student Information System</h3>
+                        <p class="project-description">A desktop database management portal built during BCA studies to manage student admission records, marks, and attendance database modules.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Local Database</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-item-card reveal-fade">
+                        <div class="project-header">
+                            <span class="project-category">BCA LAB WORK</span>
+                            <div class="project-links">
+                                <a href="https://repo2-rose-theta.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">e-Library Management System</h3>
+                        <p class="project-description">An online cataloguing and book allocation system developed to automate college library book logs, search lists, and record returns.</p>
+                        <div class="project-tags">
+                            <span>React.js</span>
+                            <span>JSON Data</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-item-card reveal-slide-right">
+                        <div class="project-header">
+                            <span class="project-category">COLLEGE PORTAL</span>
+                            <div class="project-links">
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-name">BCA Department Website</h3>
+                        <p class="project-description">A responsive departmental web hub developed to list class timetables, syllabus downloads, teacher directories, and college notices.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>Bootstrap CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: QUICK LINKS -->
+        <section id="links" class="content-section-flow border-0 pt-5 reveal-fade">
+            <div class="container">
+                <div class="links-header-row mb-4 reveal-slide-left">
+                    <i class="fa-solid fa-link links-logo-icon"></i>
+                    <h2 class="section-title"><strong>Quick Links</strong></h2>
+                </div>
+                <div class="links-grid-flow">
+                    <a href="https://hisabmittra.com/" target="_blank" rel="noopener noreferrer" class="link-card-flow">
+                        <div class="link-card-content">
+                            <span class="link-title">HisabMittra</span>
+                            <span class="link-url">hisabmittra.com <i class="fas fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </a>
+                    <a href="https://repo2-rose-theta.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-card-flow">
+                        <div class="link-card-content">
+                            <span class="link-title">Repository App</span>
+                            <span class="link-url">repo2-rose-theta.vercel.app <i class="fas fa-arrow-up-right-from-square"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: TIMELINE (EXPERIENCE) -->
+        <section id="experience" class="content-section-flow border-0 pt-5">
+            <div class="container">
+                <div class="experience-header-row mb-4">
+                    <i class="fa-solid fa-briefcase experience-logo-icon"></i>
+                    <h2 class="section-title"><strong>Experience & Journey</strong></h2>
+                </div>
+                
+                <div class="experience-timeline-flow">
+                    <div class="timeline-row-flow">
+                        <div class="time-period-tag">2023 - 2024</div>
+                        <div class="time-detail-flow">
+                            <h3>Front-End Web Intern</h3>
+                            <p class="company">Tech Pioneers Agency</p>
+                            <p class="description">Assisted in developing clean CSS architectures and converting designs into responsive templates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-row-flow">
+                        <div class="time-period-tag">2021 - 2023</div>
+                        <div class="time-detail-flow">
+                            <h3>Open Source & Learning</h3>
+                            <p class="company">Web Communities</p>
+                            <p class="description">Practiced HTML, CSS, JavaScript, and React while building utility layouts and templates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <img src="assets/ty_logo_new.svg" alt="T Logo" style="width:56px; height:56px; margin-bottom:12px;">
+                    <h3 class="footer-name">Tanisha</h3>
+                    <p class="footer-tagline">Frontend Developer & UI Designer<br>based in Gwalior, India 🇮🇳</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html"><i class="fa-solid fa-user me-2"></i>Profile</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-person me-2"></i>About</a></li>
+                        <li><a href="skills.html"><i class="fa-solid fa-laptop-code me-2"></i>Skills</a></li>
+                        <li><a href="projects.html"><i class="fa-solid fa-folder-open me-2"></i>Projects</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Get In Touch</h4>
+                    <ul class="footer-nav-list">
+                        <li><i class="fa-solid fa-location-dot me-2" style="color: var(--color-neon-pink);"></i>Gwalior, MP, India</li>
+                        <li><a href="mailto:yadavtanisha541@gmail.com"><i class="fa-solid fa-envelope me-2" style="color: var(--color-xorba-orange);"></i>yadavtanisha541@gmail.com</a></li>
+                        <li><i class="fa-solid fa-graduation-cap me-2" style="color: var(--color-neon-cyan);"></i>BCA Graduate</li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Follow Me</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/yadavtanisha541-svg" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/tanisha-yadav-57a3a3416" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span style="color: var(--color-neon-pink); font-weight: 700;">Tanisha</span>. All Rights Reserved.</p>
+                <p>Built with <i class="fa-solid fa-heart" style="color: #ff007f;"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+    <!-- Animation Engine -->
+    <script src="animations.js"></script>
+</body>
+</html>

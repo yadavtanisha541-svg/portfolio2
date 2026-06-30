@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Tanisha</title>
+    <meta name="description" content="Read about Tanisha, a creative Front-End Developer based in Gwalior, MP, India.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Animation Stylesheet -->
+    <link rel="stylesheet" href="animations.css">
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body class="light-mode page-xorba">
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Ambient Design Orbs -->
+    <div class="design-orb orb-1"></div>
+    <div class="design-orb orb-2"></div>
+
+    <!-- TOP NAVIGATION BAR (XORBA STYLE) -->
+    <nav class="navbar navbar-expand-lg custom-navbar-xorba">
+        <div class="container navbar-container-xorba">
+            <a class="navbar-brand brand-logo-xorba" href="index.html">
+                <img src="assets/ty_logo_new.svg" alt="T Logo" class="navbar-logo-img">
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <!-- Theme Switch for Mobile -->
+                <button class="theme-switch d-lg-none" id="theme-switch-mobile" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="index.html"><i class="fa-solid fa-user me-1"></i>Profile</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba active" href="about.html"><i class="fa-solid fa-person me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="skills.html"><i class="fa-solid fa-laptop-code me-1"></i>Skills</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="projects.html"><i class="fa-solid fa-folder-open me-1"></i>Project</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="contact.html"><i class="fa-solid fa-envelope me-1"></i>Contact</a></li>
+                    <!-- Theme Switch for Desktop -->
+                    <li class="nav-item ms-3 d-none d-lg-block">
+                        <button class="theme-switch" id="theme-switch-desktop" aria-label="Toggle Theme">
+                             <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN VERTICAL CONTENT CONTAINER -->
+    <main class="main-content-flow my-5">
+        <!-- Migrated About Section -->
+        <section class="about-section-xorba py-5 reveal-fade">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Portrait -->
+                    <div class="col-lg-5 mb-5 mb-lg-0 text-center reveal-slide-left">
+                        <div class="about-portrait-wrapper-xorba">
+                            <img src="assets/profile_avatar.png" alt="Tanisha - Frontend Developer" class="about-photo-xorba">
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="col-lg-7 reveal-slide-right">
+                        <h1 class="sub-heading-xorba" style="font-size: 1.4rem; font-weight: 700; color: var(--color-xorba-orange) !important; letter-spacing: 1px; display: inline-block; margin-bottom: 1.5rem;"><i class="fa-solid fa-person me-2"></i>About Me</h1>
+
+                        <p class="lead-text-xorba mb-4">Hi, I'm a Front-End Web Developer and UI designer based in Gwalior, MP, India. I specialize in bringing designs to life through clean, scalable, and responsive frontend programming.</p>
+                        
+                        <div class="about-metrics-row-xorba mb-5">
+                            <div class="metric-box-xorba">
+                                <span class="metric-num">15+</span>
+                                <span class="metric-label">Projects Completed</span>
+                            </div>
+                            <div class="metric-box-xorba">
+                                <span class="metric-num">BCA</span>
+                                <span class="metric-label">Academic Degree</span>
+                            </div>
+                            <div class="metric-box-xorba">
+                                <span class="metric-num">100%</span>
+                                <span class="metric-label">Response Rate</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-4">
+                            <a href="contact.html" class="btn-xorba-primary btn-black-custom">Download CV <i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Divider -->
+                <div class="my-5" style="border-top: 1px dashed var(--color-xorba-gray);"></div>
+
+                <!-- Coding Journey and Personal Details Row -->
+                <div class="row">
+                    <!-- Left: My Story / Philosophy -->
+                    <div class="col-lg-6 mb-4 mb-lg-0 reveal-slide-left">
+                        <h3 style="color: var(--color-xorba-dark) !important; font-weight: 800; font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fa-solid fa-book-open me-2" style="color: var(--color-xorba-orange) !important;"></i> My Coding Journey</h3>
+                        <p style="color: var(--color-xorba-dark-light) !important; line-height: 1.8; font-size: 1.05rem;">My journey into web development began during my college studies while pursuing a Bachelor of Computer Applications (BCA). Designing custom templates and translating logic into user-friendly layouts became my primary focus.</p>
+                        <p style="color: var(--color-xorba-dark-light) !important; line-height: 1.8; font-size: 1.05rem;">I specialize in writing clean, structured code and modern responsive designs. I enjoy learning new front-end skills, styling layouts with Bootstrap, and exploring modern frameworks to make web applications that feel alive.</p>
+                    </div>
+
+                    <!-- Right: Info Grid -->
+                    <div class="col-lg-6 reveal-slide-right">
+                        <h3 style="color: var(--color-xorba-dark) !important; font-weight: 800; font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fa-solid fa-list-ul me-2" style="color: var(--color-xorba-orange) !important;"></i> Personal Details</h3>
+                        <div class="details-info-list" style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="info-item" style="display: flex; border-bottom: 1px dashed var(--color-xorba-gray); padding-bottom: 8px;">
+                                <span class="info-item-label" style="font-weight: 700; width: 150px; color: var(--color-xorba-dark) !important;">Full Name</span>
+                                <span class="info-item-value" style="color: var(--color-xorba-dark-light) !important;">Tanisha Yadav</span>
+                            </div>
+                            <div class="info-item" style="display: flex; border-bottom: 1px dashed var(--color-xorba-gray); padding-bottom: 8px;">
+                                <span class="info-item-label" style="font-weight: 700; width: 150px; color: var(--color-xorba-dark) !important;">Degree</span>
+                                <span class="info-item-value" style="color: var(--color-xorba-dark-light) !important;">Bachelor of Computer Applications (BCA)</span>
+                            </div>
+                            <div class="info-item" style="display: flex; border-bottom: 1px dashed var(--color-xorba-gray); padding-bottom: 8px;">
+                                <span class="info-item-label" style="font-weight: 700; width: 150px; color: var(--color-xorba-dark) !important;">Location</span>
+                                <span class="info-item-value" style="color: var(--color-xorba-dark-light) !important;">Gwalior, Madhya Pradesh, India 🇮🇳</span>
+                            </div>
+                            <div class="info-item" style="display: flex; border-bottom: 1px dashed var(--color-xorba-gray); padding-bottom: 8px;">
+                                <span class="info-item-label" style="font-weight: 700; width: 150px; color: var(--color-xorba-dark) !important;">Email Address</span>
+                                <span class="info-item-value" style="color: var(--color-xorba-dark-light) !important;"><a href="mailto:yadavtanisha541@gmail.com" style="color: var(--color-xorba-orange) !important; font-weight: 600; text-decoration: none;">yadavtanisha541@gmail.com</a></span>
+                            </div>
+                            <div class="info-item" style="display: flex; border-bottom: 1px dashed var(--color-xorba-gray); padding-bottom: 8px;">
+                                <span class="info-item-label" style="font-weight: 700; width: 150px; color: var(--color-xorba-dark) !important;">Languages</span>
+                                <span class="info-item-value" style="color: var(--color-xorba-dark-light) !important;">English, Hindi</span>
+                            </div>
+                            <div class="info-item" style="display: flex; padding-bottom: 0;">
+                                <span class="info-item-label" style="font-weight: 700; width: 150px; color: var(--color-xorba-dark) !important;">Interests</span>
+                                <span class="info-item-value" style="color: var(--color-xorba-dark-light) !important;">Frontend Development, Learn New Techs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Divider -->
+                <div class="my-5" style="border-top: 1px dashed var(--color-xorba-gray);"></div>
+
+                <!-- Education & Core Strengths Row -->
+                <div class="row">
+                    <!-- Left: Education & Academic Journey -->
+                    <div class="col-lg-6 mb-4 mb-lg-0 reveal-slide-left">
+                        <h3 style="color: var(--color-xorba-dark) !important; font-weight: 800; font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fa-solid fa-graduation-cap me-2" style="color: var(--color-xorba-orange) !important;"></i> Education</h3>
+                        <div class="education-timeline" style="display: flex; flex-direction: column; gap: 20px;">
+                            <div class="edu-item" style="border-left: 3px solid var(--color-xorba-orange); padding-left: 15px; position: relative;">
+                                <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-xorba-orange) !important; text-transform: uppercase;">2023 - 2026</span>
+                                <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-xorba-dark) !important; margin: 5px 0;">Bachelor of Computer Applications (BCA)</h4>
+                                <p style="color: var(--color-xorba-dark) !important; margin: 0; font-size: 0.95rem;">Jiwaji University, Gwalior</p>
+                                <p style="color: var(--color-xorba-dark-light) !important; margin: 5px 0 0; font-size: 0.92rem; line-height: 1.6;">Studied software engineering principles, relational database management systems, algorithms, and core web programming including HTML, CSS, and basic JavaScript.</p>
+                            </div>
+                            <div class="edu-item" style="border-left: 3px solid var(--color-xorba-orange); padding-left: 15px; position: relative;">
+                                <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-xorba-orange) !important; text-transform: uppercase;">2019 - 2021</span>
+                                <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-xorba-dark) !important; margin: 5px 0;">Higher Secondary School (XII)</h4>
+                                <p style="color: var(--color-xorba-dark) !important; margin: 0; font-size: 0.95rem;">Science & Mathematics Stream (PCM)</p>
+                                <p style="color: var(--color-xorba-dark-light) !important; margin: 5px 0 0; font-size: 0.92rem; line-height: 1.6;">Completed senior secondary education focusing on Physics, Chemistry, and Mathematics (PCM) with strong logical foundation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Core Values / Strengths -->
+                    <div class="col-lg-6 reveal-slide-right">
+                        <h3 style="color: var(--color-xorba-dark) !important; font-weight: 800; font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fa-solid fa-star me-2" style="color: var(--color-xorba-orange) !important;"></i> My Core Strengths</h3>
+                        <div class="strengths-list" style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="strength-card" style="background: var(--bg-page-tint); padding: 15px; border-radius: 8px; border: 1px solid var(--color-xorba-gray);">
+                                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--color-xorba-dark) !important; margin: 0 0 5px;"><i class="fa-solid fa-check-double me-2" style="color: var(--color-xorba-orange) !important;"></i> Pixel-Perfect Layouts</h4>
+                                <p style="color: var(--color-xorba-dark-light) !important; margin: 0; font-size: 0.92rem; line-height: 1.6;">Converting design wireframes into clean, structured, and responsive layouts that look exactly like the mockup on all screens.</p>
+                            </div>
+                            <div class="strength-card" style="background: var(--bg-page-tint); padding: 15px; border-radius: 8px; border: 1px solid var(--color-xorba-gray);">
+                                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--color-xorba-dark) !important; margin: 0 0 5px;"><i class="fa-solid fa-code me-2" style="color: var(--color-xorba-orange) !important;"></i> Standards-Compliant Code</h4>
+                                <p style="color: var(--color-xorba-dark-light) !important; margin: 0; font-size: 0.92rem; line-height: 1.6;">Writing semantically correct HTML5 markup, highly-organized CSS, and clean Javascript for robust cross-browser operations.</p>
+                            </div>
+                            <div class="strength-card" style="background: var(--bg-page-tint); padding: 15px; border-radius: 8px; border: 1px solid var(--color-xorba-gray);">
+                                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--color-xorba-dark) !important; margin: 0 0 5px;"><i class="fa-solid fa-arrow-up-right-from-square me-2" style="color: var(--color-xorba-orange) !important;"></i> Eager & Continuous Learning</h4>
+                                <p style="color: var(--color-xorba-dark-light) !important; margin: 0; font-size: 0.92rem; line-height: 1.6;">Passionate about exploring modern framework capabilities, front-end libraries, and performance optimization techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/ty_logo_new.svg" alt="T Logo" style="width:56px; height:56px; margin-bottom:12px;">
+                    <h3 class="footer-name">Tanisha</h3>
+                    <p class="footer-tagline">Frontend Developer & UI Designer<br>based in Gwalior, India 🇮🇳</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html"><i class="fa-solid fa-user me-2"></i>Profile</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-person me-2"></i>About</a></li>
+                        <li><a href="skills.html"><i class="fa-solid fa-laptop-code me-2"></i>Skills</a></li>
+                        <li><a href="projects.html"><i class="fa-solid fa-folder-open me-2"></i>Projects</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Get In Touch</h4>
+                    <ul class="footer-nav-list">
+                        <li><i class="fa-solid fa-location-dot me-2" style="color: var(--color-neon-pink);"></i>Gwalior, MP, India</li>
+                        <li><a href="mailto:yadavtanisha541@gmail.com"><i class="fa-solid fa-envelope me-2" style="color: var(--color-xorba-orange);"></i>yadavtanisha541@gmail.com</a></li>
+                        <li><i class="fa-solid fa-graduation-cap me-2" style="color: var(--color-neon-cyan);"></i>BCA Graduate</li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Follow Me</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/yadavtanisha541-svg" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/tanisha-yadav-57a3a3416" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span style="color: var(--color-neon-pink); font-weight: 700;">Tanisha</span>. All Rights Reserved.</p>
+                <p>Built with <i class="fa-solid fa-heart" style="color: #ff007f;"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+    <!-- Animation Engine -->
+    <script src="animations.js"></script>
+</body>
+</html>

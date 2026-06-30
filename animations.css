@@ -1,0 +1,272 @@
+
+/* ==========================================
+   MASTER ANIMATION SYSTEM — TANISHA PORTFOLIO
+   ========================================== */
+
+/* ---- 1. REVEAL BASE STATES ---- */
+.reveal-fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-slide-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-slide-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-zoom {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-flip {
+    opacity: 0;
+    transform: rotateY(25deg) translateX(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.revealed {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* ---- 2. STAGGER DELAYS ---- */
+.stagger-1 { transition-delay: 0.1s !important; }
+.stagger-2 { transition-delay: 0.2s !important; }
+.stagger-3 { transition-delay: 0.3s !important; }
+.stagger-4 { transition-delay: 0.4s !important; }
+.stagger-5 { transition-delay: 0.5s !important; }
+.stagger-6 { transition-delay: 0.6s !important; }
+
+/* ---- 3. FLOATING IMAGE ANIMATION ---- */
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33%       { transform: translateY(-14px) rotate(0.5deg); }
+    66%       { transform: translateY(-7px) rotate(-0.5deg); }
+}
+@keyframes floatSide {
+    0%, 100% { transform: translateX(0px); }
+    50%       { transform: translateX(10px); }
+}
+.anim-float {
+    animation: floatUpDown 5s ease-in-out infinite;
+}
+.anim-float-slow {
+    animation: floatUpDown 7s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* ---- 4. HERO PORTRAIT GLOW RING ---- */
+@keyframes glowPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,122,0,0.0), 0 0 30px rgba(255,122,0,0.2); }
+    50%       { box-shadow: 0 0 0 18px rgba(255,122,0,0.0), 0 0 60px rgba(255,122,0,0.45); }
+}
+.hero-portrait-xorba {
+    animation: glowPulse 3s ease-in-out infinite !important;
+}
+
+/* ---- 5. TYPEWRITER CURSOR ---- */
+@keyframes blinkCaret {
+    0%, 100% { border-right-color: var(--color-xorba-orange, #ff7a00); }
+    50%       { border-right-color: transparent; }
+}
+.typewriter-text {
+    border-right: 3px solid var(--color-xorba-orange, #ff7a00);
+    padding-right: 4px;
+    animation: blinkCaret 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* ---- 6. SKILL METER ANIMATED FILL ---- */
+.meter-fill {
+    width: 0% !important;
+    transition: width 1.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+.meter-fill.meter-animated {
+    width: var(--target-width) !important;
+}
+
+/* ---- 7. COUNTER NUMBER POP ---- */
+@keyframes counterPop {
+    0%   { transform: scale(0.5); opacity: 0; }
+    70%  { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.metric-num, .exp-title {
+    display: inline-block;
+}
+.metric-num.counting, .exp-title.counting {
+    animation: counterPop 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;
+}
+
+/* ---- 8. SERVICE CARD HOVER TILT ---- */
+.service-card-xorba {
+    transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.35s ease !important;
+    cursor: default;
+}
+.service-card-xorba:hover {
+    transform: translateY(-10px) scale(1.03) !important;
+    box-shadow: 0 24px 60px rgba(255,122,0,0.18) !important;
+}
+
+/* ---- 9. PROJECT CARD HOVER LIFT ---- */
+.project-item-card {
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.4s ease !important;
+}
+.project-item-card:hover {
+    transform: translateY(-12px) scale(1.02) !important;
+    box-shadow: 0 30px 70px rgba(155,81,224,0.25) !important;
+}
+
+/* ---- 10. SKILL CARD HOVER ---- */
+.skill-meter-card {
+    transition: transform 0.3s ease, background 0.3s ease !important;
+}
+.skill-meter-card:hover {
+    transform: translateX(6px) !important;
+    background: rgba(255,122,0,0.08) !important;
+    border-radius: 8px;
+}
+
+/* ---- 11. NAV LINK UNDERLINE SLIDE ---- */
+.nav-link-custom-xorba {
+    position: relative;
+    overflow: hidden;
+}
+.nav-link-custom-xorba::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--color-xorba-orange, #ff7a00);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.nav-link-custom-xorba:hover::after,
+.nav-link-custom-xorba.active::after {
+    width: 100%;
+    left: 0;
+}
+
+/* ---- 12. LOGO SPIN ON LOAD ---- */
+@keyframes logoEntrance {
+    from { transform: rotate(-180deg) scale(0); opacity: 0; }
+    to   { transform: rotate(0deg) scale(1); opacity: 1; }
+}
+.navbar-logo-img {
+    animation: logoEntrance 0.8s cubic-bezier(0.34,1.56,0.64,1) forwards;
+}
+
+/* ---- 13. SECTION HEADING SHIMMER ---- */
+@keyframes shimmerText {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+.section-title-xorba, .section-title {
+    background: linear-gradient(90deg, #ffffff 20%, var(--color-xorba-orange, #ff7a00) 50%, #ffffff 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmerText 4s linear infinite;
+}
+
+/* ---- 14. ABOUT PHOTO BORDER SPIN ---- */
+@keyframes borderSpin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+.about-portrait-wrapper-xorba::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    background: conic-gradient(from 0deg, var(--color-xorba-orange), var(--color-neon-pink), var(--color-neon-cyan), var(--color-neon-pink), var(--color-xorba-orange));
+    animation: borderSpin 4s linear infinite;
+    z-index: -1;
+}
+.about-portrait-wrapper-xorba {
+    position: relative;
+    display: inline-block;
+}
+
+/* ---- 15. PARTICLE DOTS (Hero BG decoration) ---- */
+@keyframes particleDrift {
+    0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0.6; }
+    50%  { transform: translateY(-30px) translateX(15px) scale(1.3); opacity: 1; }
+    100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.6; }
+}
+.particle-dot {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: particleDrift linear infinite;
+}
+
+/* ---- 16. BADGE PING ANIMATION ---- */
+@keyframes badgePing {
+    0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,122,0,0.5); }
+    70%  { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(255,122,0,0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,122,0,0); }
+}
+.badge-hello-xorba {
+    animation: badgePing 2s ease-out infinite !important;
+}
+
+/* ---- 17. METRIC BOX HOVER GLOW ---- */
+.metric-box-xorba {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.metric-box-xorba:hover {
+    transform: translateY(-6px) scale(1.05) !important;
+    box-shadow: 0 12px 30px rgba(255,122,0,0.25) !important;
+}
+
+/* ---- 18. BUTTON SHINE SWEEP ---- */
+@keyframes btnShine {
+    0%   { left: -100%; }
+    100% { left: 200%; }
+}
+.btn-xorba-primary, .btn-xorba-secondary {
+    position: relative;
+    overflow: hidden;
+}
+.btn-xorba-primary::before, .btn-xorba-secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.25), transparent);
+    animation: btnShine 3s ease-in-out infinite;
+}
+
+/* ---- 19. SCROLL PROGRESS BAR ---- */
+#scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--color-xorba-orange), var(--color-neon-pink), var(--color-neon-cyan));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    border-radius: 0 2px 2px 0;
+}
+
+/* ---- 20. PAGE ENTRANCE WIPE ---- */
+@keyframes pageWipeIn {
+    from { clip-path: inset(0 100% 0 0); }
+    to   { clip-path: inset(0 0% 0 0); }
+}
+.page-entrance {
+    animation: pageWipeIn 0.6s cubic-bezier(0.77,0,0.175,1) forwards;
+}

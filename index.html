@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanisha | Web & UI Designer Portfolio</title>
+    <meta name="description" content="Portfolio of Tanisha, Frontend Web Developer and UI Designer focusing on modern responsive structures.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Animation Stylesheet -->
+    <link rel="stylesheet" href="animations.css">
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body class="light-mode page-xorba">
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- TOP NAVIGATION BAR (XORBA STYLE) -->
+    <nav class="navbar navbar-expand-lg custom-navbar-xorba">
+        <div class="container navbar-container-xorba">
+            <a class="navbar-brand brand-logo-xorba" href="index.html">
+                <img src="assets/ty_logo_new.svg" alt="T Logo" class="navbar-logo-img">
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <!-- Theme Switch for Mobile -->
+                <button class="theme-switch d-lg-none" id="theme-switch-mobile" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link-custom-xorba active" href="index.html"><i class="fa-solid fa-user me-1"></i>Profile</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="about.html"><i class="fa-solid fa-person me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="skills.html"><i class="fa-solid fa-laptop-code me-1"></i>Skills</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="projects.html"><i class="fa-solid fa-folder-open me-1"></i>Project</a></li>
+                    <li class="nav-item"><a class="nav-link-custom-xorba" href="contact.html"><i class="fa-solid fa-envelope me-1"></i>Contact</a></li>
+                    <!-- Theme Switch for Desktop -->
+                    <li class="nav-item ms-3 d-none d-lg-block">
+                        <button class="theme-switch" id="theme-switch-desktop" aria-label="Toggle Theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (XORBA STYLE) -->
+    <header class="hero-block-xorba reveal-fade">
+        <div class="container text-center hero-xorba-container">
+            <!-- Hello Badge -->
+            <span class="badge-hello-xorba">Hello!</span>
+            <h1 class="hero-title-xorba">I'm <span class="highlight-tanisha" style="color: #000000 !important; -webkit-text-fill-color: #000000 !important;">Tanisha,</span><br><span style="font-size: 0.6em;">Web Developer</span></h1>
+            
+            <div class="hero-xorba-row mt-4">
+                <!-- Left Description column -->
+                <div class="hero-xorba-left text-start reveal-slide-left">
+                    <p class="hero-desc-xorba">A creative web developer focusing on building custom responsive interfaces, clean structures, and front-end layouts.</p>
+                </div>
+                
+                <!-- Center Portrait with Orange Arch -->
+                <div class="hero-xorba-center">
+                    <div class="xorba-portrait-wrapper">
+                        <!-- Orange Semicircle Arch backdrop -->
+                        <div class="xorba-arch-backdrop"></div>
+                        <!-- Portrait Image -->
+                        <img src="assets/olivia_hero_photo.png" alt="Tanisha portrait" class="hero-portrait-xorba">
+                        <!-- Overlaid CTA Buttons inside a single container -->
+                        <div class="hero-xorba-overlay-ctas">
+                            <a href="projects.html" class="btn-xorba-primary">Portfolio <i class="fa-solid fa-arrow-trend-up"></i></a>
+                            <a href="contact.html" class="btn-xorba-secondary">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Right Rating/Experience column -->
+                <div class="hero-xorba-right text-end reveal-slide-right">
+                    <div class="rating-stars mb-2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="exp-title">15+ Projects</span>
+                    <span class="exp-subtitle">Completed</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- INFINITE SKILLS MARQUEE BANNER -->
+    <div class="skills-marquee-container">
+        <div class="skills-marquee-content">
+            <span><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS3</span>
+            <span><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+            <span><i class="fa-brands fa-react" style="color: #61dbfb;"></i> React.js</span>
+            <span><i class="fa-brands fa-bootstrap" style="color: #563d7c;"></i> Bootstrap 5</span>
+            <span><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git & GitHub</span>
+            <span><i class="fa-solid fa-code" style="color: #a293f0;"></i> Front-End</span>
+            <span><i class="fa-solid fa-laptop-code" style="color: #00bfff;"></i> UI/UX Design</span>
+            <!-- Duplicate for infinite seamless loop -->
+            <span><i class="fa-brands fa-html5" style="color: #e34c26;"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i> CSS3</span>
+            <span><i class="fa-brands fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+            <span><i class="fa-brands fa-react" style="color: #61dbfb;"></i> React.js</span>
+            <span><i class="fa-brands fa-bootstrap" style="color: #563d7c;"></i> Bootstrap 5</span>
+            <span><i class="fa-brands fa-git-alt" style="color: #f05032;"></i> Git & GitHub</span>
+            <span><i class="fa-solid fa-code" style="color: #a293f0;"></i> Front-End</span>
+            <span><i class="fa-solid fa-laptop-code" style="color: #00bfff;"></i> UI/UX Design</span>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION (XORBA DARK CHARCOAL BLOCK) -->
+    <section class="services-section-xorba py-5 reveal-fade">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5 services-header-xorba reveal-slide-left">
+                <div>
+                    <span class="sub-heading-xorba">- Services</span>
+                    <h2 class="section-title-xorba text-white">My Services</h2>
+                </div>
+                <p class="services-desc-xorba text-white opacity-75">Providing top-tier website design, interactive features, and pixel-perfect responsiveness for all platforms.</p>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Service 1 -->
+                <div class="col-md-4 mb-4 reveal-slide-left">
+                    <div class="service-card-xorba">
+                        <div class="service-icon-xorba"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Converting design mockups into fully functional, pixel-perfect, and W3C validated layouts.</p>
+                        <a href="projects.html" class="service-link-xorba">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4 mb-4 reveal-fade">
+                    <div class="service-card-xorba card-highlight">
+                        <div class="service-icon-xorba"><i class="fa-solid fa-bezier-curve"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating modern layouts, clean typographic structures, and user-centric wireframe diagrams.</p>
+                        <a href="projects.html" class="service-link-xorba text-white">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4 mb-4 reveal-slide-right">
+                    <div class="service-card-xorba">
+                        <div class="service-icon-xorba"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>Responsive Templates</h3>
+                        <p>Optimizing web pages to render layout columns cleanly across all viewport grids.</p>
+                        <a href="projects.html" class="service-link-xorba">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PROJECTS -->
+    <section id="projects" class="content-section-flow border-0 pb-0 reveal-fade" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="projects-header-row mb-4 reveal-slide-left">
+                <i class="fa-regular fa-folder-open projects-logo-icon"></i>
+                <h2 class="section-title"><strong>Featured Projects</strong></h2>
+            </div>
+            
+            <div class="projects-grid-flow">
+                <!-- Project 1 -->
+                <article class="project-item-card reveal-slide-left">
+                    <div class="project-header">
+                        <span class="project-category">BCA ACADEMIC PROJECT</span>
+                        <div class="project-links">
+                            <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Student Information System</h3>
+                    <p class="project-description">A desktop database management portal built during BCA studies to manage student admission records, marks, and attendance database modules.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Local Database</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-item-card reveal-fade">
+                    <div class="project-header">
+                        <span class="project-category">BCA LAB WORK</span>
+                        <div class="project-links">
+                            <a href="https://repo2-rose-theta.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">e-Library Management System</h3>
+                    <p class="project-description">An online cataloguing and book allocation system developed to automate college library book logs, search lists, and record returns.</p>
+                    <div class="project-tags">
+                        <span>React.js</span>
+                        <span>JSON Data</span>
+                        <span>Bootstrap 5</span>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-item-card reveal-slide-right">
+                    <div class="project-header">
+                        <span class="project-category">COLLEGE PORTAL</span>
+                        <div class="project-links">
+                            <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">BCA Department Website</h3>
+                    <p class="project-description">A responsive departmental web hub developed to list class timetables, syllabus downloads, teacher directories, and college notices.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>Bootstrap CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT METRICS STRIP -->
+    <section class="about-metrics-section-xorba py-5 reveal-fade">
+        <div class="container">
+            <div class="about-metrics-row-xorba">
+                <div class="metric-box-xorba">
+                    <span class="metric-num">15+</span>
+                    <span class="metric-label">Projects Completed</span>
+                </div>
+                <div class="metric-box-xorba">
+                    <span class="metric-num">BCA</span>
+                    <span class="metric-label">Academic Degree</span>
+                </div>
+                <div class="metric-box-xorba">
+                    <span class="metric-num">100%</span>
+                    <span class="metric-label">Response Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: QUICK LINKS -->
+    <section id="links" class="content-section-flow border-0 pt-5 reveal-fade" style="padding-bottom: 60px;">
+        <div class="container">
+            <div class="links-header-row mb-4 reveal-slide-left">
+                <i class="fa-solid fa-link links-logo-icon"></i>
+                <h2 class="section-title"><strong>Quick Links</strong></h2>
+            </div>
+            <div class="links-grid-flow">
+                <a href="https://hisabmittra.com/" target="_blank" rel="noopener noreferrer" class="link-card-flow">
+                    <div class="link-card-content">
+                        <span class="link-title">HisabMittra</span>
+                        <span class="link-url">hisabmittra.com <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+                <a href="https://repo2-rose-theta.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-card-flow">
+                    <div class="link-card-content">
+                        <span class="link-title">Repository App</span>
+                        <span class="link-url">repo2-rose-theta.vercel.app <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <img src="assets/ty_logo_new.svg" alt="T Logo" style="width:56px; height:56px; margin-bottom:12px;">
+                    <h3 class="footer-name">Tanisha</h3>
+                    <p class="footer-tagline">Frontend Developer & UI Designer<br>based in Gwalior, India 🇮🇳</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html"><i class="fa-solid fa-user me-2"></i>Profile</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-person me-2"></i>About</a></li>
+                        <li><a href="skills.html"><i class="fa-solid fa-laptop-code me-2"></i>Skills</a></li>
+                        <li><a href="projects.html"><i class="fa-solid fa-folder-open me-2"></i>Projects</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-envelope me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Get In Touch</h4>
+                    <ul class="footer-nav-list">
+                        <li><i class="fa-solid fa-location-dot me-2" style="color: var(--color-neon-pink);"></i>Gwalior, MP, India</li>
+                        <li><a href="mailto:yadavtanisha541@gmail.com"><i class="fa-solid fa-envelope me-2" style="color: var(--color-xorba-orange);"></i>yadavtanisha541@gmail.com</a></li>
+                        <li><i class="fa-solid fa-graduation-cap me-2" style="color: var(--color-neon-cyan);"></i>BCA Graduate</li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Follow Me</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/yadavtanisha541-svg" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/tanisha-yadav-57a3a3416" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-btn" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span style="color: var(--color-neon-pink); font-weight: 700;">Tanisha</span>. All Rights Reserved.</p>
+                <p>Built with <i class="fa-solid fa-heart" style="color: #ff007f;"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+    <!-- Animation Engine -->
+    <script src="animations.js"></script>
+</body>
+</html>
